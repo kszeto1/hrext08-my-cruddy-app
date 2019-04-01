@@ -1,7 +1,5 @@
 # hrext08-my-cruddy-app
 Create Read Update and Delete framework using JS
-
-
 ## Tasks
 
 ### Basic Reqs
@@ -15,3 +13,17 @@ Create Read Update and Delete framework using JS
 - [ ] State changing styling (hover/etc)
 - [ ] corgi gif
 - [ ] cowbell sound
+
+
+# Blog Webapp
+## Tasks
+
+### Basic Reqs
+[ ] Blog posts that track username, title, blog body and timestamp
+[ ] Blog posts viewed in chronological order sorted by most recent
+[ ] modern-ish UI with menu bar and dropdown menus
+
+### Advanced Reqs
+[ ] upvote/downvote for blog posts
+
+
