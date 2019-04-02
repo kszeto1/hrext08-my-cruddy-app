@@ -15,15 +15,15 @@ Create Read Update and Delete framework using JS
 - [ ] cowbell sound
 
 
-# Blog Webapp
+# Blog Web App
 ## Tasks
 
 ### Basic Reqs
-[ ] Blog posts that track username, title, blog body and timestamp
-[ ] Blog posts viewed in chronological order sorted by most recent
-[ ] modern-ish UI with menu bar and dropdown menus
+- [ ] Blog posts that track username, title, blog body and timestamp
+- [ ] Blog posts viewed in chronological order sorted by most recent
+- [ ] modern-ish UI with menu bar and dropdown menus
 
 ### Advanced Reqs
-[ ] upvote/downvote for blog posts
+- [ ] upvote/downvote for blog posts
 
 
