@@ -14,68 +14,69 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	<section class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <a href="#!">BLOG</a>
-    </div>
-    <nav>
-      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-      <ul class="nav-list">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>
-          <a href="#!">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</section>
-
-<article>
-  <h2>Navigation</h2>
-  <p>Simple, responsive navigation.</p>
-</article>
-
-
-	<div class="container">
-		<form action="" method="" class="form">
-			<div class="form">
-				<label for="key">Enter key: </label>
-				<input type="text" name="key" id="key" required>
-			</div>
-			<div class="form">
-				<label for="value">Enter value: </label>
-				<input type="text" name="value" id="value" required>
-			</div>
-			<div class="form">
-				<button class="button" id="btn-create" type="button">Create</button>
-				<button class="button" id="btn-update" type="button">Update</button>
-				<button class="button" id="btn-delete" type="button">Delete</button>
-			</div>
-			<!-- clear button? -->
-		</form>	
-		<table>
-			<thead>
-				<tr>
-					<th>Key</th>
-					<th>Value</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>test key</td>
-					<td>test value</td>
-				</tr>
-			</tbody>
-		</table>
+<body>	
+		<section class="navigation">
+	  <div class="nav-container">
+	    <div class="brand">
+	      <a href="#!">BLOG</a>
+	    </div>
+	    <nav>
+	      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+	      <ul class="nav-list">
+	        <li>
+	          <a href="index.html">Home</a>
+	        </li>
+	        <li>
+	          <a href="about.html">About</a>
+	        </li>
+	        <li>
+	          <a href="#!">Contact</a>
+	        </li>
+	      </ul>
+	    </nav>
+	  </div>
+	</section>
+	
+	<!-- button to create blog post -->
+	<div>
+		<button class="button" id="btn-post" type="button">New Post</button>
 	</div>
-	<div id="statusLabel">Status:</div>
+
+	<article>
+		<div class="container" id="blog-input">
+			<form action="" method="" class="form">
+				<div class="form">
+					<label for="key">Enter key: </label>
+					<input type="text" name="key" id="key" required>
+				</div>
+				<div class="form">
+					<label for="value">Enter value: </label>
+					<input type="text" name="value" id="value" required>
+				</div>
+				<div class="form">
+					<button class="button" id="btn-create" type="button">Create</button>
+					<button class="button" id="btn-update" type="button">Update</button>
+					<button class="button" id="btn-delete" type="button">Delete</button>
+				</div>
+				<!-- clear button? -->
+			</form>	
+			<table>
+				<thead>
+					<tr>
+						<th>Key</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>test key</td>
+						<td>test value</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="statusLabel">Status:</div>
+	</article>
 
 	<script src="app/app.js"></script>
   <!--

@@ -7,6 +7,15 @@ var loadLocalStorage = function () {
 	$('tbody').html(htmlString)
 };
 
+var toggleVisibility = function(id) {
+	var element = document.getElementById(id);
+	if (element.style.display == 'block') {
+		element.style.display = 'none';
+	} else {
+		element.style.display = 'block';
+	}
+}
+
 var updateStatusLabel = function(message) {
 	$('#statusLabel').text('Status: ' + message);
 }
@@ -15,7 +24,7 @@ var updateStatusLabel = function(message) {
  ////button and form event handlers
  // logic for determining action probably needs to go in the event handler
 $(document).ready(function () {
-	(function($) { // Begin jQuery
+	// (function($) { // Begin jQuery
   $(function() { // DOM ready
     // Toggle open and close nav styles on click
     $('#nav-toggle').click(function() {
@@ -26,9 +35,16 @@ $(document).ready(function () {
       this.classList.toggle('active');
     });
   }); // end DOM ready
-})(jQuery); // end jQuery
+// })(jQuery); // end jQuery
 
 	loadLocalStorage();
+
+	$('#btn-post').on('click', function(id) {
+			toggleVisibility('blog-input');
+		}
+	);
+
+
 
 	$('#btn-create').on('click', function(e) {
 		var key = $('#key').val();

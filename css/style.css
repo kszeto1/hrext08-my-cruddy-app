@@ -24,7 +24,8 @@ html {
 
 .navigation {
   height: 70px;
-  background: #262626;
+  background: #382dc1f0;
+  /*margin: inherit;*/
 }
 
 .nav-container {
@@ -67,14 +68,14 @@ nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 70px;
-  background: #262626;
+  background: #382dc1f0;
   color: #ffffff;
   text-decoration: none;
 }
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #2581DC;
+  background: #082047;
   color: #ffffff;
 }
 /* Mobile navigation */
@@ -84,7 +85,7 @@ nav ul li a:visited:hover {
   position: absolute;
   top: 8px;
   right: 0;
-  background: #262626;
+  background: #382dc1f0;
   height: 70px;
   width: 70px;
 }
@@ -169,7 +170,7 @@ article {
 }
 
 .container {
-	display: flex;
+	display: none;
 }
 
 /*
@@ -215,4 +216,12 @@ label {
 
 button.button {
 	margin-right: 20px;
+  border-radius: 4px;
+  border-color: #000000c2;
+}
+
+#btn-post {
+  height: 32px;
+  padding: 0 15px;
+  border-color: #000000c2;
 }
