@@ -14,7 +14,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>	
+<body class="flex-container">	
 		<section class="navigation">
 	  <div class="nav-container">
 	    <div class="brand">
@@ -38,45 +38,49 @@
 	</section>
 	
 	<!-- button to create blog post -->
-	<div>
+	<div class="flex-container">
 		<button class="button" id="btn-post" type="button">New Post</button>
 	</div>
 
-	<article>
-		<div class="container" id="blog-input">
-			<form action="" method="" class="form">
-				<div class="form">
-					<label for="key">Enter key: </label>
-					<input type="text" name="key" id="key" required>
-				</div>
-				<div class="form">
-					<label for="value">Enter value: </label>
-					<input type="text" name="value" id="value" required>
-				</div>
-				<div class="form">
-					<button class="button" id="btn-create" type="button">Create</button>
-					<button class="button" id="btn-update" type="button">Update</button>
-					<button class="button" id="btn-delete" type="button">Delete</button>
-				</div>
-				<!-- clear button? -->
-			</form>	
-			<table>
-				<thead>
-					<tr>
-						<th>Key</th>
-						<th>Value</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>test key</td>
-						<td>test value</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div id="statusLabel">Status:</div>
-	</article>
+	<!-- blog input -->
+	<div class="container flex-container" id="blog-input">
+		<form action="" method="" class="form">
+			<div class="form">
+				<label for="key">Enter key: </label>
+				<input type="text" name="key" id="key" required>
+			</div>
+			<div class="form">
+				<label for="value">Enter value: </label>
+				<input type="text" name="value" id="value" required>
+			</div>
+			<div class="form">
+				<button class="button" id="btn-create" type="button">Create</button>
+				<button class="button" id="btn-update" type="button">Update</button>
+				<button class="button" id="btn-delete" type="button">Delete</button>
+			</div>
+			<!-- clear button? -->
+		</form>	
+		<div id="status-label">Status:</div>
+	</div>
+
+	<!-- localStorage of all blogposts -->
+	<div class="blog-storage container flex-container" id='localStorage'>
+		<table>
+			<thead>
+				<tr>
+					<th>Key</th>
+					<th>Value</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>test key</td>
+					<td>test value</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
 
 	<script src="app/app.js"></script>
   <!--

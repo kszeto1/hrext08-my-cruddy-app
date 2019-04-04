@@ -22,6 +22,15 @@ html {
   box-sizing: inherit;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  margin: auto;
+  justify-content: center;
+
+}
+
 .navigation {
   height: 70px;
   background: #382dc1f0;
@@ -83,7 +92,7 @@ nav ul li a:visited:hover {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 8px;
+  top: 0px;
   right: 0;
   background: #382dc1f0;
   height: 70px;
@@ -171,6 +180,14 @@ article {
 
 .container {
 	display: none;
+  /*float: right;*/
+  /*position: relative;*/
+}
+
+.blog-storage {
+  display: block;
+  margin: auto;
+  padding: 0 15px;
 }
 
 /*
@@ -222,6 +239,17 @@ button.button {
 
 #btn-post {
   height: 32px;
-  padding: 0 15px;
-  border-color: #000000c2;
+    padding: 0 15px;
+    border-color: #000000c2;
+    margin: 10px;
+    width: max-content;
+    font-size: inherit;
+}
+
+#blog-input {
+  padding: 20px;
+}
+
+#status-label {
+  margin-top: 20px;
 }
