@@ -19,11 +19,16 @@ Create Read Update and Delete framework using JS
 ## Tasks
 
 ### Basic Reqs
-- [ ] Blog posts that track username, title, blog body and timestamp
-- [ ] Blog posts viewed in chronological order sorted by most recent
-- [ ] modern-ish UI with menu bar and dropdown menus
+- [ x ] New post button that toggles visibility of form to input blog post title and body
+- [ x ] Blog posts with title and body
+- [ x ] modern-ish UI with navigation bar
 
 ### Advanced Reqs
 - [ ] upvote/downvote for blog posts
+- [ ] Blog posts viewed in chronological order sorted by most recent
 
-
+### Resources
+- https://www.taniarascia.com/you-dont-need-a-framework/
+- https://www.csstricks.com
+- MDN
+- w3schools (HTML/CSS)
