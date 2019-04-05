@@ -1,10 +1,21 @@
+var getTimestamp = function(key) {
+	var retrievedDate = localStorage.getItem(key);
+	// console.log('retrievedDate', JSON.parse(retrievedDate));
+	// console.log(JSON.parse(retrievedDate));
+	// return JSON.parse(retrievedDate);
+}
 var loadLocalStorage = function () {
 	var keys = Object.keys(localStorage)
+	var values = Object.values(localStorage);
+	console.log('values', values)
 	var htmlString = '';
+	
 	for (var i = 0; i < keys.length; i++) {
-		htmlString += `<tr><td>${keys[i]}</td><td>${localStorage[keys[i]]}</tr></tr>`;
+		// var retrievedTimestamp = getTimestamp(keys[i]);
+		console.log(localStorage[keys[i['time']]]);
+		htmlString += `<article class="blog-post"><h1>${keys[i]}</h1><p>${localStorage[keys[i]]}</p></article>`;
 	}
-	$('tbody').html(htmlString)
+	$('article').html(htmlString)
 };
 
 var toggleVisibility = function(id) {
@@ -122,6 +133,8 @@ PAGE CONTENT STUFF
 ////create new entry
 //localStorage.setItem(key, value)
 var createEntry = function(key, value) {
+	// var testObj = {value: value, time: Date()}
+	// console.log(JSON.stringify(testObj));
 	return localStorage.setItem(key, value);
 }
 

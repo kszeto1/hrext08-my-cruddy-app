@@ -217,11 +217,14 @@ form.form {
 }
 
 div.form {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 
 label, input {
     margin-bottom: 10px;
-    width: 125px;
+    width: 500px;
 }
 
 label {
@@ -253,3 +256,42 @@ button.button {
 #status-label {
   margin-top: 20px;
 }
+
+#key {
+  width: 500;
+}
+
+#value {
+  height: 200px;
+
+}
+
+#subject {
+  margin-left: -10px;    
+}
+
+#title {
+  margin-left: -5px;
+}
+
+article {
+  word-break: break-word;
+}
+
+.blog-post {
+  border-style: solid;
+  border-radius: 8px;
+  margin: 30px;
+  border-width: 2px;
+}
+
+h1 {
+  background-color: #812dc1;
+  color: white;
+  margin-top: -10px;
+  padding-bottom: 13px;
+  text-align: center;
+  margin-left: -10px;
+  margin-right: -10px;  
+}
+
